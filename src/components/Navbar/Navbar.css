@@ -1,0 +1,63 @@
+/* Style for the Navbar */
+.discord-navbar {
+  background-image: url(https://th.bing.com/th/id/R.c5077d8b192096e430f9c0f85be1d2bb?rik=kdkLb9Tjvajchg&pid=ImgRaw&r=0); 
+  padding: 15px;
+}
+
+/* Space between Discord logo and text */
+.discord-navbar .navbar-brand img {
+  margin-right: 10px;
+}
+
+/* Style for Nav links */
+/* .navbar-nav .nav-link {
+  font-size: 1rem;
+  padding-right: 10px;
+} */
+
+/* Space for careers and login */
+/* .navbar-nav .nav-link:last-child {
+  margin-right: 5px;
+} */
+
+/* Login Button */
+.login-link {
+  font-weight: bold;
+  border: none;
+  padding: 8px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 30px;
+}
+
+/* Custom class for white toggle button */
+.navbar-toggler-white {
+  /* border-color: white; */
+  border: none;
+}
+
+.navbar-toggler-white .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.color-change {
+  animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    color: rgb(179, 10, 145);
+  }
+  25% {
+    color: rgb(123, 123, 204);
+  }
+  50% {
+    color: rgb(3, 77, 3);
+  }
+  75% {
+    color: orange;
+  }
+  100% {
+    color: rgb(76, 42, 42);
+  }
+}

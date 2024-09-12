@@ -1,0 +1,62 @@
+/*   
+  .slide-in{
+    transform: translateX(-100%);
+    animation: slideIn 2s forwards;
+  }
+  
+  @keyframes slideIn{
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .slide-out{
+    transform: translateX();
+    animation: slideOut 1s forwards;
+  }
+  
+  @keyframes slideOut{
+    from {
+      transform: translateX(50%);
+    }
+  }
+
+
+  .blinked {
+    animation: blink 1s step-start infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+   */
+
+   /* Slide-in animation for the first card (left to right) */
+/* Slide-in animation for the first card (left to right) */
+/* .slide-in-left {
+  transform: translateX(-100%);
+  animation: slideInLeft 2s forwards;
+}
+
+@keyframes slideInLeft {
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Slide-in animation for the second card (right to left) */
+/* .slide-in-right {
+  transform: translateX(100%);
+  animation: slideInRight 2s forwards;
+}
+
+@keyframes slideInRight {
+  to {
+    transform: translateX(0);
+  }
+}  */
