@@ -1,6 +1,8 @@
 /* Style for the Navbar */
 .discord-navbar {
   background-image: url(https://th.bing.com/th/id/R.c5077d8b192096e430f9c0f85be1d2bb?rik=kdkLb9Tjvajchg&pid=ImgRaw&r=0); 
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 15px;
 }
 

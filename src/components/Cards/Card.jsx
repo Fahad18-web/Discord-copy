@@ -49,11 +49,11 @@ function Card(props) {
     config: { duration: 2000 }                
   });
 
-  const slideInRight = useSpring({
-    from: { transform: 'translateX(100%)' },  
-    to: { transform: 'translateX(0)' },       
-    config: { duration: 2000 }               
-  });
+  // const slideInRight = useSpring({
+  //   from: { transform: 'translateX(100%)' },  
+  //   to: { transform: 'translateX(0)' },       
+  //   config: { duration: 2000 }               
+  // });
   
 
   return (
@@ -123,7 +123,7 @@ function Card(props) {
           <div className="d-flex justify-content-center align-items-center w-100">
           <animated.div
               className="custom-box d-flex flex-column flex-md-row overflow-hidden rounded-xl"
-              style={{ ...customBoxStyle, ...slideInRight }} // Apply slideIn animation here
+              style={{ ...customBoxStyle, ...slideIn }} // Apply slideIn animation here
             >
               <div className="left-side col-md-6 p-4 d-flex justify-content-center align-items-center">
                 <video
