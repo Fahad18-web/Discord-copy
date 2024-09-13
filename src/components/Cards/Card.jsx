@@ -4,7 +4,7 @@ import { useSpring, animated } from '@react-spring/web';
 
 function Card(props) {
   const customBoxStyle = {
-    backgroundColor: props.mode === 'default' ? '#1F75FE' : props.mode === 'dark' ? 'black' : '#fff',
+    backgroundColor: "black",
     borderRadius: '50px',
     border: '5px solid rgba(255, 255, 255, 0.2)',
     boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.2)',
@@ -21,12 +21,10 @@ function Card(props) {
   };
 
   const rightSideStyle = {
-    color: props.mode === 'default' ? 'white' : props.mode === 'dark' ? 'white' : 'black',
     padding: '5%',
   };
 
   const headingStyle = {
-    color: props.mode === 'default' ? 'white' : props.mode === 'dark' ? 'white' : 'black',
     fontSize: '1.75rem',
     fontWeight: 'bold',
     textTransform: 'uppercase',
@@ -38,38 +36,25 @@ function Card(props) {
     fontWeight: 'bold',
   };
 
-  const lastImageContainerStyle = {
-    backgroundColor: props.mode === 'dark' ? 'black' : props.mode === 'light' ? 'rgba(var(--bs-light-rgb), var(--bs-bg-opacity))' : 'rgba(var(--bs-primary-rgb), var(--bs-bg-opacity))',
-    padding: '20px',
-  };
-
   const slideIn = useSpring({
     from: { transform: 'translateX(-100%)' },  
     to: { transform: 'translateX(0)' },      
     config: { duration: 2000 }                
   });
-
-  // const slideInRight = useSpring({
-  //   from: { transform: 'translateX(100%)' },  
-  //   to: { transform: 'translateX(0)' },       
-  //   config: { duration: 2000 }               
-  // });
   
-
+  
   return (
     <>
-      <div className={`container-fluid bg-${props.mode === 'dark' ? 'black' : props.mode === 'light' ? 'light' : 'primary'}`}
-        style={{ background: customBoxStyle.backgroundColor, padding: '8px 4px', color: props.mode === 'light' ? 'black' : 'white' }}>
-        <div className="container-fluid d-flex justify-content-center align-items-center">
+      <div className='container-fluid'>
+        <div className="container-fluid text-white d-flex justify-content-center align-items-center">
           <div className="d-flex items-center justify-center">
-            {/* Wrap the outermost div in animated.div and apply the spring style */}
             <animated.div
               className="custom-box d-flex flex-column flex-md-row overflow-hidden rounded-xl"
               style={{ ...customBoxStyle, ...slideIn }} // Apply slideIn animation here
             >
               <div className="left-side col-md-6 p-4 d-flex items-center justify-center">
                 <video
-                  src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/663b271d6f05c8c9e11f8d65_Discord%20Refresh%20Sound-MP4-transcode.mp4"
+                  src="https://marketplace.canva.com/EAF2aHqimc8/2/0/800w/canva-tPIuA_H9drs.mp4"
                   style={videoStyle}
                   autoPlay
                   loop
@@ -77,18 +62,16 @@ function Card(props) {
               </div>
               <div className="right-side col-md-6 d-flex ml-3 items-center justify-center" style={rightSideStyle}>
                 <div>
-                  <h2 style={headingStyle}>Make your group chats more fun</h2>
+                  <h2 style={headingStyle}>Engage in Real-Time Conversations!</h2>
                   <p className="lead pt-4" style={paragraphStyle}>
-                    Use custom emoji, stickers, soundboard effects, and more to add your personality to your voice, video, or text chat. Set your avatar and a custom status, and write your own profile to show up in chat your way.
-                  </p>
+                  Step into our chat room and engage in real-time discussions with ease. Whether you need help or want to share ideas, our platform offers instant, interactive communication. Enjoy seamless conversations at your convenience!                  </p>
                 </div>
               </div>
             </animated.div>
           </div>
         </div>
     
-        <div className={`container-fluid bg-${props.mode === 'dark' ? 'black' : props.mode === 'light' ? 'light' : 'primary'} style={{ background: customBoxStyle.backgroundColor, padding: '8px 4px' }}`}
-      style={{ color: props.mode === 'light' ? 'black' : 'white' }}>       
+        <div className="container-fluid text-white d-flex justify-content-center align-items-center">  
           <div className="d-flex justify-content-center align-items-center w-100">
             <motion.div
               className="custom-box d-flex flex-column flex-md-row overflow-hidden rounded-xl"
@@ -118,8 +101,7 @@ function Card(props) {
           </div>
         </div>
 
-        <div className={`container-fluid bg-${props.mode === 'dark' ? 'black' : props.mode === 'light' ? 'light' : 'primary'} style={{ background: customBoxStyle.backgroundColor, padding: '8px 4px' }}`}
-      style={{ color: props.mode === 'light' ? 'black' : 'white' }}>         
+        <div className="container-fluid text-white d-flex justify-content-center align-items-center">      
           <div className="d-flex justify-content-center align-items-center w-100">
           <animated.div
               className="custom-box d-flex flex-column flex-md-row overflow-hidden rounded-xl"
@@ -145,8 +127,7 @@ function Card(props) {
           </div>
         </div>
 
-        <div className={`container-fluid bg-${props.mode === 'dark' ? 'black' : props.mode === 'light' ? 'light' : 'primary'} style={{ background: customBoxStyle.backgroundColor, padding: '8px 4px' }}`}
-      style={{ color: props.mode === 'light' ? 'black' : 'white' }}>          
+        <div className="container-fluid text-white d-flex justify-content-center align-items-center">       
           <div className="d-flex justify-content-center align-items-center w-100">
             <motion.div
               className="custom-box d-flex flex-column flex-md-row overflow-hidden rounded-xl"
@@ -176,10 +157,7 @@ function Card(props) {
           </div>
         </div>
 
-        <div className={`container-fluid bg-${props.mode === 'dark' ? 'black' : props.mode === 'light' ? 'light' : 'primary'} style={{ background: customBoxStyle.backgroundColor, padding: '8px 4px' }}`}
-      style={{ color: props.mode === 'light' ? 'black' : 'white' }}>  
-        {/* <div className={`container-fluid bg-${props.mode === 'dark' ? 'black' : props.mode === 'light' ? 'light' : 'primary'} slide-in`} 
-      style={{ background: customBoxStyle.backgroundColor, padding: '8px 4px', color: props.mode === 'light' ? 'black' : 'white' }}> */}
+        <div className="container-fluid text-white d-flex justify-content-center align-items-center">
           <div className="d-flex justify-content-center align-items-center w-100">
           <animated.div
               className="custom-box d-flex flex-column flex-md-row overflow-hidden rounded-xl"
@@ -205,9 +183,8 @@ function Card(props) {
           </div>
         </div>
 
-        <div className={`container-fluid bg-${props.mode === 'dark' ? 'black' : props.mode === 'light' ? 'light' : 'primary'} style={{ background: customBoxStyle.backgroundColor, padding: '8px 4px' }}`}
-      style={{ color: props.mode === 'light' ? 'black' : 'white' }}>          
-          <div className="d-flex justify-content-center align-items-center w-100">
+        <div className="container-fluid text-white d-flex justify-content-center align-items-center">        
+          <div className="d-flex mb-5 justify-content-center align-items-center w-100">
             <motion.div
               className="custom-box d-flex flex-column flex-md-row p-2 overflow-hidden rounded-xl "
               style={customBoxStyle}
@@ -236,8 +213,7 @@ function Card(props) {
           </div>
         </div>
 
-        <div className={`text-center mt-5 bg-${props.mode === 'dark' ? 'black' : props.mode === 'light' ? 'light' : 'primary'}`}>
-          {/* Adding <style> tag for keyframes within the component */}
+        {/* <div className={`text-center mt-5 bg-${props.mode === 'dark' ? 'black' : props.mode === 'light' ? 'light' : 'primary'}`}>
           <style>
             {`
               @keyframes blink {
@@ -249,7 +225,7 @@ function Card(props) {
           </style>
 
           <h1 className={`text-${props.mode === 'light' ? 'black' : 'white' } pb-5 pt-5 fw-bold`} style={{
-           animation: 'blink 1s infinite', // Referencing the defined keyframe
+           animation: 'blink 1s infinite', 
            }}>
            YOU CAN'T SCROLL ANYMORE. <br />BETTER GO CHAT.
           </h1>
@@ -259,7 +235,7 @@ function Card(props) {
               alt="Footer Art"
               style={{ maxWidth: '100%', height: 'auto' }}/>
           </div>
-        </div>
+        </div> */}
     </div>
     </>
   );

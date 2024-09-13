@@ -1,21 +1,8 @@
-/* animations.css */
-/* .fade-in {
-  opacity: 0;
-  animation: fadeInAnimation ease 2s;
-  animation-fill-mode: forwards;
+.container-fluid{
+  background-image: url(https://th.bing.com/th/id/R.c5077d8b192096e430f9c0f85be1d2bb?rik=kdkLb9Tjvajchg&pid=ImgRaw&r=0); 
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-} */
-
   
   .slide-in {
     transform: translateX(-100%);
@@ -32,25 +19,3 @@
     transform: translateY(100%);
     animation: slideIn 2s forwards;
   }
-  
-  @keyframes slideIn {
-    to {
-      transform: translateY(0);
-    }
-  }
-
-  /* .bounce {
-    animation: bounce 2s infinite;
-  }
-
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-30px);
-    }
-    60% {
-      transform: translateY(-15px);
-    }
-  } */

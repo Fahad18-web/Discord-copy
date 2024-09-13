@@ -1,40 +1,20 @@
-/* Style for the Navbar */
-.discord-navbar {
-  background-image: url(https://th.bing.com/th/id/R.c5077d8b192096e430f9c0f85be1d2bb?rik=kdkLb9Tjvajchg&pid=ImgRaw&r=0); 
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 15px;
-}
+/* .discord-navbar {
+  padding: 5px;
+  position: fixed;
+  width: 100%;
 
-/* Space between Discord logo and text */
-.discord-navbar .navbar-brand img {
-  margin-right: 10px;
-}
-
-/* Style for Nav links */
-/* .navbar-nav .nav-link {
-  font-size: 1rem;
-  padding-right: 10px;
 } */
 
-/* Space for careers and login */
-/* .navbar-nav .nav-link:last-child {
-  margin-right: 5px;
-} */
-
-/* Login Button */
 .login-link {
   font-weight: bold;
   border: none;
-  padding: 8px 20px;
+  padding: 8px 22px;
   text-decoration: none;
   display: inline-block;
   border-radius: 30px;
 }
 
-/* Custom class for white toggle button */
 .navbar-toggler-white {
-  /* border-color: white; */
   border: none;
 }
 
@@ -47,13 +27,13 @@
 }
 
 @keyframes colorChange {
-  0% {
-    color: rgb(179, 10, 145);
-  }
-  25% {
-    color: rgb(123, 123, 204);
-  }
   50% {
+    color: white;
+  }
+  100% {
+    color: rgb(8, 95, 121);
+  }
+  /* 50% {
     color: rgb(3, 77, 3);
   }
   75% {
@@ -61,5 +41,5 @@
   }
   100% {
     color: rgb(76, 42, 42);
-  }
+  } */
 }

@@ -3,7 +3,7 @@ import Typed from 'typed.js'; // Import Typed.js
 import { Container, Row, Col } from 'react-bootstrap';
 import './Content.css';
 
-const Content = (props) => {
+const Content = () => {
   const typedElement = useRef(null); // Use ref to point to the h1 element
 
   useEffect(() => {
@@ -26,9 +26,8 @@ const Content = (props) => {
   };
   return (
     <>
-      {/* Dynamically setting the background and text color */}
-      <div className={`bg-${props.mode === 'light' ? 'light' : props.mode === 'dark' ? 'black' : 'primary'} ${props.mode === 'dark' ? 'text-white' : props.mode === 'light' ? 'text-black' : 'text-white'} p-3`}>
-<Row className="sm:flex items-center justify-center ml-10">
+      <div className="container-fluid text-white pt-16 vh-auto pb-5">
+        <Row className="sm:flex items-center justify-center ml-10 pt-10">
           <Col md={6} className="sm:flex items-center flex-col p-3 max-sm:ml-10 ">
             <h1 className="fade-in display-6 fw-bold items-center justify-center text-uppercase mb-4 fs-1 w-[280px]" style={headingFont}>
             <span ref={typedElement}></span>            </h1>

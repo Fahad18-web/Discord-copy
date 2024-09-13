@@ -1,44 +1,31 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import './Navbar.css'; // Custom CSS for additional styling
+import './Navbar.css';
+import logo from '../../assets/streamnestlogo.png';
 
-const DiscordNavbar = (props) => {
+const DiscordNavbar = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" className="discord-navbar">
+    <Navbar bg="primary" variant="dark" expand="lg" className="discord-navbar" fixed="top">
       <Container>
-        {/* Adding pr-5 to create space between the logo and the navigation */}
-        <Navbar.Brand href="#home" className="color-change d-flex align-items-center pr-5 fw-bold">
+        <Navbar.Brand href="#home" className="color-change d-flex align-items-center pr-5 fw-bold" style={{ fontSize: '20px' }}>
           <img
-            src="https://www.svgrepo.com/show/353655/discord-icon.svg"
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-            alt="Discord Logo"
+            src={logo}
+            width="40"
+            height="40"
+            className="d-inline-block align-top pt-1"
+            alt="StreamNest Logo"
           />
-          Discord
+          StreamNest
         </Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav" className={`navbar-toggler ${props.mode === 'light' ? '' : 'navbar-toggler-white'}`} />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mx-auto fw-bold">
-            {/* Apply the same condition for Nav.Link text color */}
-            <Nav.Link href="#download" className='mx-2 text-white'>Download</Nav.Link>
-            <Nav.Link href="#nitro" className='mx-2 text-white'>Nitro</Nav.Link>
-            <Nav.Link href="#discover" className='mx-2 text-white'>Discover</Nav.Link>
-            <Nav.Link href="#safety" className='mx-2 text-white'>Safety</Nav.Link>
-            <Nav.Link href="#support" className='mx-2 text-white'>Support</Nav.Link>
-            <Nav.Link href="#blog" className='mx-2 text-white'>Blog</Nav.Link>
-            <Nav.Link href="#careers" className='mx-2 text-white'>Careers</Nav.Link>
-          </Nav>
           <div className="ml-auto login-container">
             <a 
               href="#login" 
               className="login-link bg-white text-black">
               Login
             </a>
-          </div>
-          <div className="form-check form-switch ml-4">
-            <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
           </div>
         </Navbar.Collapse>
       </Container>
