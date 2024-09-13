@@ -1,9 +1,9 @@
-/* .discord-navbar {
+ .discord-navbar {
   padding: 5px;
   position: fixed;
-  width: 100%;
-
-} */
+  width: 100vw;
+   overflow-x: hidden;
+} 
 
 .login-link {
   font-weight: bold;
