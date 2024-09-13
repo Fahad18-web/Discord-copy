@@ -5,7 +5,7 @@ import logo from '../../assets/streamnestlogo.png';
 
 const DiscordNavbar = () => {
   return (
-    <Navbar bg="primary" variant="dark" expand="lg" className="discord-navbar" fixed="top">
+    <Navbar bg="primary" variant="dark" expand="lg" className="discord-navbar" fixed="top" w-[100vw] overflow-hidden>
       <Container>
         <Navbar.Brand href="#home" className="color-change d-flex align-items-center pr-5 fw-bold" style={{ fontSize: '20px' }}>
           <img
